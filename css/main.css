@@ -278,6 +278,12 @@ img {
 }
 
 /* Utils */
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 /* Layouts */
 .container {
   margin-left: auto;
