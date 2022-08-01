@@ -16,3 +16,12 @@
     @content;
   }
 }
+
+@mixin transition-for-1($property) {
+  transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin transition-for-2($property1, $property2) {
+  transition: $property1 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $property2 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
