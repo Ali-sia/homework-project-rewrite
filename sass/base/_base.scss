@@ -1,0 +1,37 @@
+body {
+  background-color: $main-background-color;
+  color: $primary-text-color;
+
+  font-family: $main-font;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+p,
+a,
+ul,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
