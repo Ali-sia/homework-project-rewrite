@@ -34,20 +34,13 @@ $social-background-footer: rgba(255, 255, 255, 0.1);
     background-color: $accent-color;
     outline: none;
   }
-}
 
-.social-list {
-  &__item--footer {
+  &--footer > &__item {
     border-radius: 50%;
 
     background-color: $social-background-footer;
   }
-  &__item--footer &__link {
+  &--footer &__link {
     fill: $social-icon-light;
-  }
-
-  &__item--footer &__link:hover,
-  &__item--footer &__linl:focus {
-    background-color: $accent-color;
   }
 }

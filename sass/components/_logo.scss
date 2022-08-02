@@ -1,7 +1,7 @@
 $logo-font: 'Raleway', sans-serif;
 $logo-color: #000000;
 $logo-hover-color: rgba(33, 150, 243, 0.6);
-// $logo-footer-color: #ffffff;
+$logo-footer-color: #ffffff;
 
 .logo {
   padding-top: 16px;
@@ -33,17 +33,18 @@ $logo-hover-color: rgba(33, 150, 243, 0.6);
     @include transition-for-1(color);
   }
 
+  &--lighter > &__item + &__item {
+    color: $logo-footer-color;
+  }
+
   &:hover > &__item {
     color: $logo-hover-color;
   }
-}
-// .logo {
-//   &__item--footer {
-//     color: $logo-footer-color;
-//   }
 
-//   &--footer {
-//     padding: 0;
-//     margin-bottom: 20px;
-//   }
-// }
+  &--mb {
+    display: inline-block;
+
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}
