@@ -10,9 +10,8 @@
 
 /* Layouts */
 @import './layouts/container';
-@import './layouts/hero';
+// @import './layouts/hero';
 // @import './layouts/footer';
-@import './layouts/header';
 // @import './layouts/mobile-menu';
 // @import './layouts/modal';
 // -- @import './layouts/menu';
@@ -33,6 +32,6 @@
 // -- @import './components/cta-section';
 // -- @import './components/flat-item';
 // -- @import './components/flat-section';
-// -- @import './components/hero-section';
+@import './components/hero-section';
 // -- @import './components/prices-section';
 // -- @import './components/video-section';
