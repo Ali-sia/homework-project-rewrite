@@ -49,6 +49,13 @@ $hero-title-color: #ffffff;
   }
 }
 
-.features-list__title {
+.features-list__title,
+.team-list__title {
   margin-bottom: 10px;
+}
+
+.team-list__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
 }
