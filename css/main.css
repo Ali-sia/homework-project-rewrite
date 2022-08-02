@@ -431,6 +431,28 @@ img {
     text-align: center;
   }
 }
+.title--larger {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: none;
+}
+@media screen and (min-width: 1200px) {
+  .title--larger {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+.title--mb {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .title--mb {
+    margin-bottom: 50px;
+  }
+}
 
 .hero__title {
   margin-bottom: 30px;
@@ -528,4 +550,40 @@ img {
   min-height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
+}
+
+.occupation {
+  padding-top: 0;
+}
+@media screen and (max-width: 1199px) {
+  .occupation {
+    display: none;
+  }
+}
+
+.occupation-list {
+  display: flex;
+}
+.occupation-list__thumb {
+  position: relative;
+}
+.occupation-list__caption {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+}
+.occupation-list__item:not(:last-child) {
+  margin-right: 30px;
 }/*# sourceMappingURL=main.css.map */
