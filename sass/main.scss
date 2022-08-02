@@ -10,6 +10,7 @@
 
 /* Layouts */
 @import './layouts/container';
+@import './layouts/hero';
 // @import './layouts/footer';
 @import './layouts/header';
 // @import './layouts/mobile-menu';
@@ -17,7 +18,7 @@
 // -- @import './layouts/menu';
 
 /* UI */
-// @import './ui/button';
+@import './ui/button';
 // @import './ui/checkbox';
 // @import './ui/form-field';
 @import './ui/link';
