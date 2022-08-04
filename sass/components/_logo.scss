@@ -1,5 +1,5 @@
 $logo-font: 'Raleway', sans-serif;
-$logo-color: #000000;
+
 $logo-hover-color: rgba(33, 150, 243, 0.6);
 $logo-footer-color: #ffffff;
 
@@ -37,7 +37,8 @@ $logo-footer-color: #ffffff;
     color: $logo-footer-color;
   }
 
-  &:hover > &__item {
+  &:hover > &__item,
+  &:focus > &__item {
     color: $logo-hover-color;
   }
 

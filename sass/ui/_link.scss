@@ -1,12 +1,10 @@
 $color-link: rgba(255, 255, 255, 0.6);
 
-.link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+// .link {
+//   @include transition-for-1(fill);
 
-  &:hover {
-    color: $accent-color;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     color: $accent-color;
+//   }
+// }
