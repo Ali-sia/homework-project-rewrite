@@ -20,7 +20,7 @@
             ><span class="logo__item">Web</span><span class="logo__item">Studio</span></a
           >
           <nav class="header__mobile-menu">
-            <button class="header__button" type="button">
+            <button class="header__button" type="button" data-mobile-menu-open>
               <svg
                 class="header__icon"
                 width="40"
@@ -31,8 +31,12 @@
                 <use href="./images/icons1.svg#icon-menu"></use>
               </svg>
             </button>
-            <div class="header__drop-dowm-menu" id="mobile-menu">
-              <button class="header__button" type="button">
+            <div class="header__drop-dowm-menu" id="mobile-menu" data-mobile-menu>
+              <button
+                class="header__button header__button--close"
+                type="button"
+                data-mobile-menu-close
+              >
                 <svg
                   class="header__icon"
                   width="40"
@@ -45,52 +49,54 @@
               </button>
               <ul class="navigation-list">
                 <li class="navigation-list__item">
-                  <a href="./index.html" class="link navigation-list__link">Студія</a>
+                  <a href="./index.html" class="navigation-list__link">Студія</a>
                 </li>
                 <li class="navigation-list__item">
                   <a
                     href="./portfolio.html"
-                    class="link navigation-list__link navigation-list__link--active"
+                    class="navigation-list__link navigation-list__link--active"
                     >Портфоліо</a
                   >
                 </li>
                 <li class="navigation-list__item">
-                  <a href="#" class="link navigation-list__link">Контакти</a>
+                  <a href="#" class="navigation-list__link">Контакти</a>
                 </li>
               </ul>
               <ul class="navigation-contact-list">
                 <li class="navigation-contact-list__item">
-                  <a href="tel:+380961111111" class="link navigation-contact-list__link"
+                  <a href="tel:+380961111111" class="navigation-contact-list__link"
                     >+38 096 111 11 11</a
                   >
                 </li>
                 <li class="navigation-contact-list__item">
-                  <a href="mailto:info@devstudio.com" class="link navigation-contact-list__link"
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="navigation-contact-list__link navigation-contact-list__link--smaller"
                     >info@devstudio.com</a
                   >
                 </li>
               </ul>
               <ul class="text-social-list">
                 <li class="text-social-list__item">
-                  <a href="#" class="link text-social-list__link">Instagram</a>
+                  <a href="#" class="text-social-list__link">Instagram</a>
                 </li>
                 <li class="text-social-list__item">
                   <span class="text-social-list__separator">|</span>
                 </li>
                 <li class="text-social-list__item">
-                  <a href="#" class="link text-social-list__link">Twitter</a>
+                  <a href="#" class="text-social-list__link">Twitter</a>
                 </li>
                 <li class="text-social-list__item">
                   <span class="text-social-list__separator">|</span>
                 </li>
                 <li class="text-social-list__item">
-                  <a href="#" class="link text-social-list__link">Facebook</a>
+                  <a href="#" class="text-social-list__link">Facebook</a>
                 </li>
                 <li class="text-social-list__item">
                   <span class="text-social-list__separator">|</span>
                 </li>
                 <li class="text-social-list__item">
-                  <a href="#" class="link text-social-list__link">LinkedIn</a>
+                  <a href="#" class="text-social-list__link">LinkedIn</a>
                 </li>
               </ul>
             </div>
@@ -98,22 +104,20 @@
           <nav class="header__desktop-menu">
             <ul class="navigation-list">
               <li class="navigation-list__item">
-                <a href="./index.html" class="link navigation-list__link">Студія</a>
-              </li>
-              <li class="navigation-list__item">
-                <a
-                  href="./portfolio.html"
-                  class="link navigation-list__link navigation-list__link--active"
-                  >Портфоліо</a
+                <a href="./index.html" class="navigation-list__link navigation-list__link--active"
+                  >Студія</a
                 >
               </li>
               <li class="navigation-list__item">
-                <a href="#" class="link navigation-list__link">Контакти</a>
+                <a href="./portfolio.html" class="navigation-list__link">Портфоліо</a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="#" class="navigation-list__link">Контакти</a>
               </li>
             </ul>
             <ul class="navigation-contact-list">
               <li class="navigation-contact-list__item">
-                <a class="link navigation-contact-list__link" href="mailto:info@devstudio.com">
+                <a class="navigation-contact-list__link" href="mailto:info@devstudio.com">
                   <svg class="navigation-contact-list__icon" width="16" height="12">
                     <use href="./images/icons1.svg#icon-envelope"></use>
                   </svg>
@@ -121,7 +125,7 @@
                 >
               </li>
               <li class="navigation-contact-list__item">
-                <a class="link navigation-contact-list__link" href="tel:+380961111111"
+                <a class="navigation-contact-list__link" href="tel:+380961111111"
                   ><svg class="navigation-contact-list__icon" width="10" height="16">
                     <use href="./images/icons1.svg#icon-smartphone"></use>
                   </svg>
