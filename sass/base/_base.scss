@@ -40,3 +40,25 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+input,
+textarea {
+  width: 100%;
+
+  color: inherit;
+  border: 1px solid $border-input-color;
+  border-radius: 4px;
+
+  @include transition-for-1(border);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid $accent-color;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+}
