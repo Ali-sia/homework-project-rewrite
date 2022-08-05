@@ -751,6 +751,11 @@ textarea {
   fill: #2196f3;
 }
 
+.button--centered {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /* UI */
 .button {
   padding: 6px 22px;
