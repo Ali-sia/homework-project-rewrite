@@ -38,21 +38,22 @@ $border-checkbox-color: #212121;
 
     display: inline-block;
 
-    // margin: 0;
-    // padding: 0;
+    margin: 0;
+    padding: 0;
 
     background-color: inherit;
     border: 2px solid $border-checkbox-color;
     border-radius: 2px;
 
-    @include transition-for-2(border-color, background-color);
+    @include transition-for-2(border, background-color);
   }
 
   &__input:checked + &__icon {
     background-color: $accent-color;
     background-image: url(../images/icon-check.svg);
     background-size: contain;
-    background-origin: border-box;
-    border-color: transparent;
+    // background-origin: border-box;
+    // border-color: transparent;
+    border: none;
   }
 }
